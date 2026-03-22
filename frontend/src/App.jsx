@@ -26,10 +26,9 @@ function App() {
 
     try {
 
-      const res = await axios.post("https://explain-my-plan-ai-clarity-structuring-tool2-2a994kg62.vercel.app/", {
-
-        input,
-
+      // In your FRONTEND folder -> App.jsx
+      const response = await axios.post("https://explain-my-plan-ai-clarity-structuring-tool2-2a994kg62.vercel.app/analyze", { 
+        prompt: userPrompt 
       });
 
 
